@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos vehiculos</title>
-    <script src="vehiculo.js"></script>
     <style>
-        body{
+        body {
             background-color: darkorchid;
             color: aliceblue;
             font-size: 20px;
             font-style: italic;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        h1{
+
+        h1 {
             padding: 5px;
         }
     </style>
 </head>
+
 <body>
     <center>
         <br>
@@ -60,7 +62,7 @@
                 <tr>
                     <td>Estado del vehículo</td>
                     <td>
-                       <span>Nuevo</span> <input type="radio" name="r1" id="nuevo" value="nuevo">
+                        <span>Nuevo</span> <input type="radio" name="r1" id="nuevo" value="nuevo">
                         <span>Usado</span><input type="radio" name="r1" id="usado" value="usado">
                     </td>
                 </tr>
@@ -73,34 +75,35 @@
                 <tr>
                     <td>Valor</td>
                     <td>
-                        <input type="text" id="vslor" placeholder="Digite el vallor de vehículo">
+                        <input type="text" id="valor" placeholder="Digite el vallor de vehículo">
                     </td>
                 </tr>
             </tbody>
         </table>
         <br>
-
         <table border="3" style="background-color: plum;"></table>
         <tr>
             <td>
                 <button id="agr" onclick="agregar(0)">Agregar</button>
-                <button id="act" onclick="agregar(1)" >Actualizar</button>
+                <button id="act" onclick="agregar(1)">Actualizar</button>
             </td>
         </tr>
-    </table>
-    <h2>Listado de vehículos registrados</h2>
-    <table border="3" style="background-color: plum;">
-        <th>Placa</th>
-        <th>marca</th>
-        <th>modelo</th>
-        <th>color</th>
-        <th>kilometros recorridos</th>
-        <th> Estado</th>
-        <th>imagen</th>
-        <th>Valor del vehículo</th>
-        <th>Acciones</th>
-        <tbody id="cuerpo"></tbody>
-    </table>
+        </table>
+        <h2>Listado de vehículos registrados</h2>
+        <table border="3" style="background-color: plum;">
+            <th>Placa</th>
+            <th>marca</th>
+            <th>modelo</th>
+            <th>color</th>
+            <th>kilometros recorridos</th>
+            <th> Estado</th>
+            <th>imagen</th>
+            <th>Valor del vehículo</th>
+            <th>Acciones</th>
+            <tbody id="cuerpo"></tbody>
+        </table>
     </center>
 </body>
+<script src="vehiculo.js"></script>
+
 </html>
